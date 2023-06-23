@@ -2,7 +2,6 @@
 import { useEffect } from "react";
 import { content } from "../Content";
 import { useTrail, animated } from 'react-spring';
-import heroBackground from "../assets/images/Hero/bg.jpg";
 
 const Hero = () => {
   const { hero } = content;
@@ -13,7 +12,7 @@ const Hero = () => {
   });
 
   return (
-     <section id="home" className="overflow-hidden bg-cover" style={{ backgroundImage: `url(${heroBackground})` }}>
+    <section id="home" className="overflow-hidden">
       <div className="min-h-screen relative flex md:flex-row  flex-col-reverse md:items-end justify-center items-center">
         <div
           data-aos="slide-left"
@@ -33,14 +32,14 @@ const Hero = () => {
         
 
         {/* first col */}
-        <div className="pb-56 px-6 pt-5 " data-aos="fade-up">
-        <h2 className="text-7xl text-black ">{hero.title}</h2>
+        <div className="pb-60 px-6 pt-5 " data-aos="fade-down">
+        <h2 className="text-7xl ">{hero.title}</h2>
 
           <br />
           <div className="flex justify-end" >
             {/* <button className="btn">{hero.btnText}</button> */}
           </div>
-          <div className="flex flex-col gap-2 mt-5  ">
+          <div className="flex flex-col gap-2 mt-5 ">
             {hero.hero_content.map((content, i) => (
              <div className="flex flex-col gap-1 mt-1">
              {trail.map((style, i) => (
@@ -52,8 +51,7 @@ const Hero = () => {
                  className={`flex items-center w-70  ${i === 1 && 'flex-row-reverse '}`}
                >
                  {/* <h3>{hero.hero_content[i].count}</h3> */}
-                 <p className="text-3xl text-black ">{hero.hero_content[i].text}</p>
-                 
+                 <p>{hero.hero_content[i].text}</p>
                </animated.div>
              ))}
            </div>
