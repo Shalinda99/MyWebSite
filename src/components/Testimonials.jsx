@@ -15,7 +15,7 @@ const buttonStyle = {
   padding: "10px 20px", // Replace with your desired padding
   fontSize: "16px", // Replace with your desired font size
 };
-const PDF_FILE_URL = 'https://shalinda.netlify.app/Amal_Shalinda_CV.pdf'
+const PDF_FILE_URL = 'https://shalinda.netlify.app/dist/assests/Amal_Shalinda_CV.pdf'
 const Resume = () => {
   const { Resume } = content;
   const downloadFileAtURL =(url) =>{
