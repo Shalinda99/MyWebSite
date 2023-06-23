@@ -62,19 +62,20 @@ export const content = {
   ],
   hero: {
     title: "AMAL SHALINDA",
-    firstName: "Hello",
-    LastName: "Everyone!",
+    firstName: "Hi,",
+    LastName: "Everyone..!",
     fName: "Welcome to",
     LName: "My Website..!",
     // btnText: "Hire Me",
     image: Hero_person,
     hero_content: [
       {
-        text: "Years of Experinse in Web development",
+        text: "Creating Impactful Solutions for a Digital World",
+        
       },
-      {
-        text: "Projects Worked in my career",
-      },
+      
+      
+      
     ],
   },
   skills: {
