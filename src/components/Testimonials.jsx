@@ -11,7 +11,7 @@ import { useState } from "react";
 const buttonStyle = {
 
 };
-const PDF_FILE_URL = 'https://shalinda.netlify.app/dist/assets/Amal_Shalinda_CV.pdf'
+const PDF_FILE_URL = 'https://shalinda.netlify.app/dist/Amal_Shalinda_CV.pdf'
 const Resume = () => {
   const { Resume } = content;
   const downloadFileAtURL =(url) =>{
