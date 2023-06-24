@@ -14,7 +14,7 @@ const buttonStyle = {};
 const Resume = () => {
   const { Resume } = content;
   const PDF_FILE_URL =
-    "https://github.com/Shalinda99/MyWebSite/blob/master/dist/Amal_Shalinda_CV.pdf";
+    "https://drive.google.com/drive/u/0/folders/1h_hV4FnyPkrtWtSHMDQUm_6ie_iH7yZ1";
   const handleDownloadCV = () => {
     window.open(PDF_FILE_URL, "_blank");
   };
