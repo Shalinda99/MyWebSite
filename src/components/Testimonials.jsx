@@ -1,4 +1,5 @@
 import { content } from "../Content";
+
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
 
@@ -11,9 +12,14 @@ import { useState } from "react";
 const buttonStyle = {
  
 };
-const PDF_FILE_URL = 'https://shalinda.netlify.app/public/Amal_Shalinda_CV.pdf'
+
+
 const Resume = () => {
   const { Resume } = content;
+  const PDF_FILE_URL = 'https://github.com/Shalinda99/MyWebSite/blob/master/dist/Amal_Shalinda_CV.pdf'
+  const handleDownloadCV = () => {
+    window.open(PDF_FILE_URL, '_blank');
+  };
   const downloadFileAtURL =(url) =>{
     const filename = url.split('/').pop()
     const aTag = document.createElement('a')
@@ -34,8 +40,10 @@ const Resume = () => {
         </h4>
         <br />
         <div className="flex justify-center">
-          <button  className="btn"  onClick={() => {downloadFileAtURL(PDF_FILE_URL);}}>Download My CV</button>
-          </div>
+          <button className="btn" onClick={handleDownloadCV}>
+            Download My CV
+          </button>
+        </div>
       </div>
     </section>
   );
