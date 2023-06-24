@@ -9,26 +9,24 @@ import "swiper/css/pagination";
 
 import { Pagination } from "swiper";
 import { useState } from "react";
-const buttonStyle = {
- 
-};
-
+const buttonStyle = {};
 
 const Resume = () => {
   const { Resume } = content;
-  const PDF_FILE_URL = 'https://github.com/Shalinda99/MyWebSite/blob/master/dist/Amal_Shalinda_CV.pdf'
+  const PDF_FILE_URL =
+    "https://github.com/Shalinda99/MyWebSite/blob/master/dist/Amal_Shalinda_CV.pdf";
   const handleDownloadCV = () => {
-    window.open(PDF_FILE_URL, '_blank');
+    window.open(PDF_FILE_URL, "_blank");
   };
-  const downloadFileAtURL =(url) =>{
-    const filename = url.split('/').pop()
-    const aTag = document.createElement('a')
-    aTag.href=url
-    aTag.setAttribute('download',filename)
-    document.body.appendChild(aTag)
-    aTag.click()
-    aTag.remove()
-  }
+  // const downloadFileAtURL =(url) =>{
+  //   const filename = url.split('/').pop()
+  //   const aTag = document.createElement('a')
+  //   aTag.href=url
+  //   aTag.setAttribute('download',filename)
+  //   document.body.appendChild(aTag)
+  //   aTag.click()
+  //   aTag.remove()
+  // }
   return (
     <section>
       <div className="md:container px-5 pt-14">
