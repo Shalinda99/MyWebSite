@@ -9,6 +9,8 @@ import nodejs from "./assets/images/Skills/node.png";
 import python from "./assets/images/Skills/python.png";
 import java from "./assets/images/Skills/java.png";
 import c from "./assets/images/Skills/c.png";
+import html from "./assets/images/Skills/html.png";
+import css from "./assets/images/Skills/css.png";
 
 import services_logo1 from "./assets/images/Services/logo1.png";
 import services_logo2 from "./assets/images/Services/logo2.png";
@@ -61,21 +63,19 @@ export const content = {
     },
   ],
   hero: {
-    title: "AMAL SHALINDA",
-    firstName: "Hi,",
-    LastName: "Everyone..!",
-    fName: "Welcome to",
-    LName: "My Website..!",
-    // btnText: "Hire Me",
+    title: "HI, I'M AMAL SHALINDA",
+    firstName: "",
+    LastName: "WELCOME..!",
     image: Hero_person,
     hero_content: [
       {
-        text: "Creating Impactful Solutions for a Digital World",
-        
+        count: "<<",
+        text: "Full Stack Developer ",
       },
-      
-      
-      
+      {
+        count: ">>",
+        text: "Innovative Problem Solver",
+      },
     ],
   },
   skills: {
@@ -121,6 +121,16 @@ export const content = {
         name: "C",
         para: "Efficient and versatile programming",
         logo: c,
+      },
+      {
+        name: "HTML",
+        para: "Markup language for web development",
+        logo: html,
+      },
+      {
+        name: "CSS",
+        para: "Styling for web pages",
+        logo: css,
       },
     ],
     icon: MdArrowForward,

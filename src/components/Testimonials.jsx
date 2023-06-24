@@ -9,11 +9,7 @@ import "swiper/css/pagination";
 import { Pagination } from "swiper";
 import { useState } from "react";
 const buttonStyle = {
-  backgroundColor: "#18FD5E", // Replace with your desired color
-  color: "black", // Replace with your desired text color
-  borderRadius: "4px", // Replace with your desired border radius
-  padding: "10px 20px", // Replace with your desired padding
-  fontSize: "16px", // Replace with your desired font size
+  
 };
 const PDF_FILE_URL = 'https://shalinda.netlify.app/dist/assests/Amal_Shalinda_CV.pdf'
 const Resume = () => {
@@ -38,7 +34,7 @@ const Resume = () => {
         </h4>
         <br />
         <div className="flex justify-center">
-          <button onClick={() => {downloadFileAtURL(PDF_FILE_URL);}}style={buttonStyle}>Download My CV</button>
+          <button className="btn" onClick={() => {downloadFileAtURL(PDF_FILE_URL);}}style={buttonStyle}>Download My CV</button>
           </div>
       </div>
     </section>
