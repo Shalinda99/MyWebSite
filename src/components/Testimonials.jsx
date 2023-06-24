@@ -39,7 +39,7 @@ const Resume = () => {
         <br />
         <div className="flex justify-center">
           <button className="btn" onClick={handleDownloadCV}>
-            Download My CV
+            View My CV
           </button>
         </div>
       </div>
