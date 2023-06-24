@@ -38,14 +38,14 @@ const Skills = () => {
   return (
     <section className="min-h-fit bg-bg_light_primary" id="skills">
       {/* modal */}
-      <Modal
+      {/* <Modal
         isOpen={modalIsOpen}
         onRequestClose={closeModal}
         style={customStyles}
       >
         <div className="flex items-center gap-2">
           <img className="h-10" src={selectSkill?.logo} alt="..." />
-          <h6>{selectSkill?.name}</h6>
+          <h6>{selectSkill?.n}</h6>
         </div>
         <br />
         <ul className="list-decimal px-4 font-Poppins sm:text-sm text-xs !leading-7">
@@ -66,7 +66,7 @@ const Skills = () => {
             Close
           </button>
         </div>
-      </Modal>
+      </Modal> */}
 
       {/* content */}
       <div className="md:container px-5  py-14">
