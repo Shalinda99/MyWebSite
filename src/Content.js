@@ -11,6 +11,9 @@ import java from "./assets/images/Skills/java.png";
 import c from "./assets/images/Skills/c.png";
 import html from "./assets/images/Skills/html.png";
 import css from "./assets/images/Skills/css.png";
+import golang from "./assets/images/Skills/golang.png";
+import git from "./assets/images/Skills/git.png";
+
 
 import services_logo1 from "./assets/images/Services/logo1.png";
 import services_logo2 from "./assets/images/Services/logo2.png";
@@ -131,6 +134,16 @@ export const content = {
         name: "CSS",
         para: "Styling for web pages",
         logo: css,
+      },
+      {
+        name: "Go",
+        para: "Go lang- Programming Language",
+        logo: golang,
+      },
+      {
+        name: "Git",
+        para: "Version Controlling-github/bitbucket",
+        logo: git,
       },
     ],
     icon: MdArrowForward,

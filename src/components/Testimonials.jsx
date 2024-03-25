@@ -18,15 +18,7 @@ const Resume = () => {
   const handleDownloadCV = () => {
     window.open(PDF_FILE_URL, "_blank");
   };
-  // const downloadFileAtURL =(url) =>{
-  //   const filename = url.split('/').pop()
-  //   const aTag = document.createElement('a')
-  //   aTag.href=url
-  //   aTag.setAttribute('download',filename)
-  //   document.body.appendChild(aTag)
-  //   aTag.click()
-  //   aTag.remove()
-  // }
+ 
   return (
     <section>
       <div className="md:container px-5 pt-14">

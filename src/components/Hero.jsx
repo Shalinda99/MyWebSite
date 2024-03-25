@@ -22,20 +22,16 @@ const Hero = () => {
         <div className="pb-16 px-6 pt-5 " data-aos="fade-down">
           <h1>{hero.title}</h1>
           <br />
-          {/* <div className="flex justify-end">
-            <button className="btn">{hero.btnText}</button>
-          </div> */}
+         
           <div className="flex flex-col gap-10 mt-10">
             {hero.hero_content.map((content, i) => (
               <div
                 key={i}
                 data-aos="fade-down"
                 data-aos-delay={i * 300}
-            //     className={`flex items-center w-80 gap-5
-            // ${i === 1 && " flex-row-reverse text-right"}  `}
+            
               >
                 <h2>{content.text}</h2>
-                {/* <p>{content.text}</p> */}
               </div>
             ))}
           </div>
